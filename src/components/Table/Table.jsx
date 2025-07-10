@@ -1,11 +1,12 @@
 import './table.scss'
 
-const Table = (props) => {
+const Table = ({ date }) => {
   return (
     <div className="table__wrapper">
       <table className="table">
         <thead className="table__head">
           <tr>
+            <th>ID</th>
             <th>Fullname</th>
             <th>Birth</th>
             <th>Email</th>
@@ -21,8 +22,9 @@ const Table = (props) => {
           </tr>
         </thead>
         <tbody className="table__body">
-          {props.date?.map((e) => (
+          {date?.map((e, i) => (
             <tr className="table__info" key={e.id}>
+              <td>{i + 1}</td>
               <td>{e.fullname}</td>
               <td>{e.birth}</td>
               <td>{e.email}</td>
