@@ -5,12 +5,12 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 import { MdNoteAdd } from 'react-icons/md'
 
 const Header = ({ setInfo }) => {
-  const [fullname, setFullname] = useState('Abdulaziz')
-  const [birth, setBirth] = useState(18)
-  const [email, setEmail] = useState('abu@gmail.com')
-  const [phone, setPhone] = useState(998331663033)
-  const [gender, setGender] = useState('Male')
-  const [occupation, setOccupation] = useState('True')
+  const [fullname, setFullname] = useState('')
+  const [birth, setBirth] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [gender, setGender] = useState('')
+  const [occupation, setOccupation] = useState('')
 
   const idtypeRef = useRef(null)
   const idnumberRef = useRef(null)
