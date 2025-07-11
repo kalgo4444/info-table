@@ -41,6 +41,12 @@ const Header = ({ setInfo }) => {
     }
     setInfo((p) => [...p, userdata])
     setShow(false)
+    setFullname('')
+    setBirth('')
+    setEmail('')
+    setPhone('')
+    setGender('')
+    setOccupation('')
   }
   return (
     <>
